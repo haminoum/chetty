@@ -7,10 +7,11 @@ services:
       dockerfile: Dockerfile
     image: chetty-frontend:latest
     ports:
-      - 8081:8081
+      - 8080:8080
     volumes:
       - .:/chetty-frontend/app
       - /app/node_modules
+
   backend:
     container_name: chetty-backend
     build:
@@ -18,9 +19,4 @@ services:
       dockerfile: Dockerfile
     image: chetty-backend:latest
     ports:
-      - 18888:8888
-    networks:
-      - chetty-network
-networks:
-  chetty-network:
-    driver: bridge
+      - 8081:8081
