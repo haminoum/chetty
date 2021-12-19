@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: chetty-frontend
+    build:
+      context: ./chetty-frontend/
+      dockerfile: Dockerfile
+    image: chetty-frontend:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/chetty-frontend/app
+      - /app/node_modules
+
+  backend:
+    container_name: chetty-backend
+    build:
+      context: ./chetty-backend/
+      dockerfile: Dockerfile
+    image: chetty-backend:latest
+    ports:
+      - 8081:8081
