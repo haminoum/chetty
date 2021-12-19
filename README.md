@@ -1,93 +1,51 @@
-# chetty
+# The challenge (Fullstack Engineer)
 
+A simple chat application which is able to send messages and
+display messages from all senders:
 
+<img src="Chetty@2x.png" width="600" alt="chat"/>
 
-## Getting started
+A simple backend with an API for messages that reads and writes data from a database, and a
+frontend to interact with that API.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+API features:
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/AminHero/chetty.git
-git branch -M main
-git push -uf origin main
+1. Receive new messages from the client
+2. List all messages in chronological order for the client
 ```
 
-## Integrate with your tools
+The design of the API is up to you.
 
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://gitlab.com/AminHero/chetty/-/settings/integrations)
+Runnable locally using `docker-compose`. Don't forget to include all the dependencies of your
+service in the composer file, including your database system of choice.
 
-## Collaborate with your team
+# Rules
 
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+We understand your time is precious and would not want you to spend more than **3 to 5 hours** on this over the span
+of **1 week** max.
 
-## Test and Deploy
+Please use a **JVM language**, preferably Java for your backend service. Feel free to use any framework, like Spring
+for example. Now for the frontend, please use JavaScript (Vanilla JS, React, ...). We want you to provide a responsive
+implementation.
 
-Use the built-in continuous integration in GitLab.
+# What we expect
 
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+It is OK if the challenge is not completed. Try to **prioritize** it by what you think is more important. Tell us what
+motivated your technology choices, how you tackled the task, what you would do differently were you given more time,
+what you would differently a second time around, etc.
 
-***
+Here are some pointers for you of things we will be looking for:
 
-# Editing this README
+- Commit often, write useful commit messages
+- Code readability
+- Performance: it should load reasonably fast on a mobile device
+- Accessibility: the more usable the interface, the better
+- Design: we are not looking for pixel-pushing, but we love attention to detail
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:d1264f68ab2536d4fddee7ec0d2f8b8f?https://www.makeareadme.com/) for this template.
+# Next steps
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Send an email with a link to your repository solution to `code-challenge@doodle.com`.
 
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-
+Make sure your email has the following subject: `FS-<yourname>`. So for example, if your name were "Paul Smith",
+your email subject would be `FS-Paul Smith`
