@@ -3,7 +3,7 @@ services:
   frontend:
     container_name: chetty-frontend
     build:
-      context: ./chetty-frontend/
+      context: ./frontend/
       dockerfile: Dockerfile
     image: chetty-frontend:latest
     ports:
@@ -15,7 +15,7 @@ services:
   backend:
     container_name: chetty-backend
     build:
-      context: ./chetty-backend/
+      context: ./backend/
       dockerfile: Dockerfile
     image: chetty-backend:latest
     ports:
